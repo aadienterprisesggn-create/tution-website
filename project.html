@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bright Future Tuition Center</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f5f7fb;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: rgba(17, 17, 17, 0.95);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00c6ff;
+    }
+
+    /* HERO */
+    header {
+      background: linear-gradient(120deg, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+
+    header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    header button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: white;
+      color: #007bff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    header button:hover {
+      background: #111;
+      color: white;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    /* CARDS */
+    .cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      width: 260px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: 0.4s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* FORM */
+    input, textarea {
+      width: 300px;
+      padding: 12px;
+      margin: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #00c6ff;
+    }
+
+    button {
+      background: linear-gradient(120deg, #007bff, #00c6ff);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      input, textarea {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#courses">Courses</a>
+  <a href="#teachers">Teachers</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<header id="home">
+  <h1>Bright Future Tuition Center</h1>
+  <p>Class 1–12 | Maths | Science | English</p>
+  <button onclick="alert('Call: 9876543210')">Join Now</button>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Us</h2>
+  <p>Experienced teachers with 5+ years of teaching students successfully.</p>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+  <h2>Our Courses</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Class 1–5</h3>
+      <p>Strong foundation building</p>
+    </div>
+
+    <div class="card">
+      <h3>Class 6–10</h3>
+      <p>Maths & Science focus</p>
+    </div>
+
+    <div class="card">
+      <h3>Class 11–12</h3>
+      <p>Board exam preparation</p>
+    </div>
+  </div>
+</section>
+
+<!-- TEACHERS -->
+<section id="teachers">
+  <h2>Our Teachers</h2>
+
+  <div class="cards">
+    <div class="card">Math Expert</div>
+    <div class="card">Science Specialist</div>
+    <div class="card">English Faculty</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+
+  <p>📍 Delhi</p>
+  <p>📞 9876543210</p>
+
+  <input placeholder="Your Name"><br>
+  <input placeholder="Phone Number"><br>
+  <textarea placeholder="Message"></textarea><br>
+
+  <button onclick="alert('We will contact you soon!')">Send</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Bright Future Tuition Center
+</footer>
+
+</body>
+</html>
